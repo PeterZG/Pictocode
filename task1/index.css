@@ -1,0 +1,28 @@
+.container{
+    width: 1981px;
+    height: 844px;
+    background-color: #003781;
+    padding: 100px;
+    display: grid;
+    grid: 800px/1fr 1fr 1fr ;
+    gap: 50px;
+}
+
+.item {
+    color: white;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+.p1{
+    font: 2.5em arial;
+}
+.p2{
+    font: 1.75em arial;
+}
+.p3{
+    font: 2em arial;
+}

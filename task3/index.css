@@ -1,0 +1,253 @@
+body {
+    background-color: black;
+}
+
+.outbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font: 1em arial;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 20px;
+}
+
+
+@media all and (min-width: 871px) {
+    .container {
+        padding: 30px 25px;
+        width: 1595px;
+        min-height: 895px;
+        max-height: 3034px;
+        row-gap: 15px;
+    }
+
+    .board {
+        width: 310px;
+        max-height: 835px;
+        border-radius: 15px;
+    }
+
+    .name {
+        font-size: 2.5em;
+        display: flex;
+        align-items: center;
+    }
+
+    .top1 .note {
+        font-size: 1.05em;
+    }
+
+    .tip {
+        display: inline-block;
+    }
+
+    .price {
+        font-size: 5.5em;
+        font-weight: 540;
+    }
+
+    .btn {
+        display: flex;
+        justify-items: stretch;
+    }
+
+    .btn button {
+        background-color: white;
+        border: solid 1px #333333;
+        color: #424242;
+        width: 100%;
+        height: 70px;
+        border-radius: 35px;
+        font-size: 1.3em;
+        font-weight: bolder;
+    }
+
+    .board:nth-child(2) button {
+        background-color: #166ee1;
+        color: white;
+        border: none;
+    }
+
+    .feature {
+        display: none;
+    }
+}
+
+@media all and (max-width: 870px) {
+    .container {
+        padding: 15px 15px;
+        width: 633px;
+        height: 3034px;
+        row-gap: 10px;
+    }
+
+    .board {
+        width: 565px;
+        height: 650px;
+        border-end-end-radius: 15px;
+        border-end-start-radius: 15px;
+
+        grid-template-rows: 2fr 1fr 4fr;
+    }
+
+    .name {
+        font-size: 1.6em;
+        display: flex;
+        align-items: center;
+    }
+
+    .top1 .note {
+        font-size: 1.3em;
+    }
+
+    .tip {
+        display: none;
+    }
+
+    .price {
+        font-size: 4em;
+        font-weight: 540;
+    }
+
+    .month {
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .btn {
+        display: flex;
+        justify-items: flex-start;
+    }
+
+    .btn button {
+        background-color: white;
+        border: solid 1px #333333;
+        color: #424242;
+        width: 40%;
+        height: 70px;
+        border-radius: 35px;
+        font-size: 1.3em;
+        font-weight: bolder;
+    }
+
+    .feature {
+        display: flex;
+        gap: 10px;
+        margin-top: 40px;
+        font-size: .7em;
+    }
+
+    .pull-down {
+        border-bottom: solid 1px #424242;
+        border-left: solid 1px #424242;
+        width: 7px;
+        height: 7px;
+
+        transform: rotate(-45deg);
+    }
+}
+
+.board {
+    border: 1px solid #d3d6da;
+    padding: 45px 35px;
+    display: grid;
+    grid-template-rows: 7fr 3fr 6fr;
+    grid-template-columns: 1fr;
+    color: #424242;
+}
+
+.board:last-child {
+    background-color: #333333;
+    color: white;
+}
+
+.top {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+
+.tip {
+    background-color: #cff5d1;
+    font-size: 0.4em;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+
+.charge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.charge .note {
+    font-size: 1.4em;
+}
+
+.month {
+    font-size: 1.4em;
+    margin-top: 15px;
+}
+
+.month span {
+    font-weight: bold;
+}
+
+.board:last-child .top2 img {
+    filter: invert(68%) sepia(0%) saturate(0%) hue-rotate(184deg) brightness(90%) contrast(87%);
+    width: 70px;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.contact {
+    font-size: 1.2em;
+    color: #878787;
+    text-align: center;
+}
+
+.contact span {
+    color: #5d5d5d;
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.title {
+    font-size: 1.4em;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+    height: 28px;
+    font-size: 1.1em;
+}
+
+li img {
+    position: relative;
+    top: 10px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.board:last-child li img {
+    filter: invert(1);
+}
